@@ -61,6 +61,10 @@ if [ $? -ne 0 ]; then
 fi
 set +x
 
+# List contents of target directory for debugging
+echo "Contents of target directory:"
+ls -l target/
+
 echo 'The following command runs and outputs the execution of your Java'
 echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 set -x
